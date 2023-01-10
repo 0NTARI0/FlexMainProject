@@ -12,19 +12,20 @@ button::-moz-focus-inner{padding:0;border:0;}
 a,a:visited{text-decoration:none;}
 a:hover{text-decoration:none;}
 ul li{list-style:none;}
-img{vertical-align:top; width: 300px;}
+img{vertical-align:top; width: 500px;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 /*--------------------*/
 
 .wrapper{
     display: flex;
     flex-direction: column;
-    min-width: 100%;
+    min-height: 100vh;
     
 }
 
 .content {
-    height: 100vh;
+    /* min-height: 100vh; */
+    align-content: space-between;
 	flex: 1 1 auto;
 }
 
@@ -40,11 +41,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 .hi-row{
     display: flex;
-
     justify-content: space-between;
     align-items: center;
-
-    padding: 0 100px 0 100px;
+    /* padding: 0 100px 0 100px; */
 }
 .header-img{
     margin: 50px 50px 50px 25px;
