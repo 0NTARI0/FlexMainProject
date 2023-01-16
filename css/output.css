@@ -2608,8 +2608,20 @@ video {
     visibility: hidden;
   }
 
+  .max-md\:collapse {
+    visibility: collapse;
+  }
+
   .max-md\:order-1 {
     order: 1;
+  }
+
+  .max-md\:inline-block {
+    display: inline-block;
+  }
+
+  .max-md\:hidden {
+    display: none;
   }
 
   .max-md\:w-auto {
