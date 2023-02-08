@@ -13,6 +13,16 @@ module.exports = {
     //   'customimg': 'url("C:\Users\Dmytro\Desktop\FlexMainProject\img\icons\icon.png") 0 1px no-repeat',
     // },
   },
+  daisyui: {
+    styled: true,
+    themes: false,
+    base: true,
+    utils: true,
+    logs: true,
+    rtl: false,
+    prefix: "",
+    darkTheme: "dark",
+  },
   plugins: [require("daisyui")],
   
 }
