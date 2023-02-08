@@ -8,9 +8,11 @@ module.exports = {
       },
 
     },
+    
     // backgroundSize:{
     //   'customimg': 'url("C:\Users\Dmytro\Desktop\FlexMainProject\img\icons\icon.png") 0 1px no-repeat',
     // },
   },
+  plugins: [require("daisyui")],
   plugins: [],
 }
