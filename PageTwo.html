@@ -16,68 +16,62 @@
 </head>
 
 <body>
-    <div class="sm:flex flex-col ">
-        <div class="content-between flex-auto ">
-            <header class="flex bg-gray-600 ">
-            </header>
+    <div>
+        <div>
             <main>
-                <div class="bg-slate-100">
-                    <div class="max-w-screen-xl m-auto">
+                <div class="bg-slate-100 h-screen">
+                    <div class="max-w-screen-xl m-auto flex">
                         <div class="flex flex-col items-center w-full">
                             <div class="flex flex-col content-center p-10 w-3/4">
                                 <div class="flex flex-col text-4xl text-center mb-3 drop-shadow-text">
                                     <p>Якщо у Вас виникло запитання</p>
                                     <p>заповніть форму нижче</p>
                                 </div>
-                                <form class="flex flex-col mt-12 gap-8">
-                                    <div class="relative flex flex-col">
+                                <form class="flex flex-col mt-12 gap-1">
+                                    <div class="grid gap-4 grid-cols-2">
+                                        <div class="relative">
+                                            <div class="form-control w-full">
+                                                <label class="label">
+                                                    <span class="label-text">Як Вас звати?</span>
+                                                </label>
+                                                <input type="text" placeholder=""
+                                                    class="input input-bordered w-full max-w-xs" />
+                                                <label class="label">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <label tabindex="0" class="btn m-1">Яка ваша професія</label>
+                                            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                                              <li><a>Будівельник</a></li>
+                                              <li><a>Бізнесмен</a></li>
+                                            </ul>
+                                          </div>
+                                        <div class="relative">
+                                            <div class="form-control ">
+                                                <label class="label">
+                                                    <span class="label-text">Як Ваш email?</span>
+                                                </label>
+                                                <input type="text" placeholder=""
+                                                    class="input input-bordered w-full max-w-xs" />
+                                                <label class="label">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                        <input id="name" name="name" type="text"
-                                            class="peer h-12  w-1/2 placeholder-transparent shadow-2xl max-md:w-full
-                                                    border-2 rounded-full p-5 text-xl border-gray-700 text-gray-900 focus:outline-none focus:border-rose-600"
-                                            placeholder="Ім'я">
-                                        <label for="name" class="absolute left-5 -top-7 text-gray-600 
-                                            transition-all
-                                            peer-placeholder-shown:text-xl 
-                                            peer-placeholder-shown:text-gray-400
-                                            peer-placeholder-shown:top-3
-                                            peer-focus:-top-7
-                                            peer-focus:text-xl">Ім'я</label>
-                                    </div>
                                     <div class="relative">
-                                        <input id="email" name="email" type="email"
-                                            class="peer h-12 w-1/2 placeholder-transparent shadow-2xl max-md:w-full
-                                                    border-2 rounded-full p-5 text-xl border-gray-700 text-gray-900 focus:outline-none focus:border-rose-600"
-                                            placeholder="email">
-                                        <label for="email" class="absolute left-5 -top-7 text-gray-600 
-                                            transition-all
-                                            peer-placeholder-shown:text-xl 
-                                            peer-placeholder-shown:text-gray-400
-                                            peer-placeholder-shown:top-3
-                                            peer-focus:-top-7
-                                            peer-focus:text-xl">email</label>
-                                    </div>
-                                    <div class="relative">
-                                        <textarea id="massage" name="massage" type="submit"
-                                            class="peer w-full h-72 placeholder-transparent shadow-2xl max-md:w-full
-                                                    border-2 rounded-3xl p-5 text-xl border-gray-700 text-gray-900 bg-white focus:outline-none focus:border-rose-600"
-                                            placeholder="Напишіть своє повідомлення"></textarea>
-                                        <label for="email" class="absolute left-5 -top-7 text-gray-600 
-                                            transition-all
-                                            peer-placeholder-shown:text-xl 
-                                            peer-placeholder-shown:text-gray-400
-                                            peer-placeholder-shown:top-3
-                                            peer-focus:-top-7
-                                            peer-focus:text-xl">Напишіть своє повідомлення</label>
+                                        <div class="form-control">
+                                            <label class="label">
+                                                <span class="label-text">Напишіть тут ваше запитання</span>
+                                            </label>
+                                            <textarea class="textarea textarea-bordered h-24" placeholder=""></textarea>
+                                            <label class="label">
+                                            </label>
+                                        </div>
                                     </div>
                                     <div class="b mx-auto h-16 w-64 flex justify-center items-center">
-                                        <div
-                                            class="h-12 w-1/5 bg-gradient-to-br from-white to-gray-100 border-2 border-gray-700
-                                                   items-center rounded-full shadow-2xl cursor-pointer absolute overflow-hidden 
-                                                   hover:scale-x-110 hover:scale-y-105 transition duration-200 ease-out">
-                                        </div>
-                                        <a
-                                            class="text-center text-gray-900 font-semibold z-10 pointer-events-none">Відправити</a>
+                                        <button class="btn w-64 rounded-full">Button</button>
                                     </div>
                                 </form>
                                 <div>
